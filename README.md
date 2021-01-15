@@ -8,6 +8,8 @@ pip install flask
 ```
 
 #### Run the server using the following command
+
+open the config.py file and add your reddit credentials into it.
 ```
 python app.py
 ```
