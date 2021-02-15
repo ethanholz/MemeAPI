@@ -22,7 +22,7 @@ def main(limit=1):
         json_list = []
         while(True):
             submission = reddit.subreddit(config.subreddits).random()
-            if submission.score > 250: #upvotes > 250
+            if submission.score > config.min_upvotes: #upvotes > 250
                 json_string = {
                             "title" : submission.title,
                             "subreddit" : str(submission.subreddit),
