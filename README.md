@@ -17,6 +17,7 @@ python app.py
 #### Usage:
 
 to get one meme: ```localhost:5000```
+
 to get more than one meme: ```localhost:5000/{number of memes you want}```
 
 Here's how it looks when ran correctly
