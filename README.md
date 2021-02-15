@@ -14,6 +14,11 @@ open the config.py file and add your reddit credentials into it.
 python app.py
 ```
 
+#### Usage:
+
+to get one meme: ```localhost:5000```
+to get more than one meme: ```localhost:5000/{number of memes you want}```
+
 Here's how it looks when ran correctly
 ![img file](https://github.com/jaychandra6/MemeAPI/blob/main/screenshot.png)
 
