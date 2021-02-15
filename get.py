@@ -17,9 +17,9 @@ def loginToReddit():
 
 reddit = loginToReddit()
 
-def main():
+def main(limit=1):
     try:
-        json_string = {}
+        json_list = []
         while(True):
             submission = reddit.subreddit(config.subreddits).random()
             if submission.score > 250: #upvotes > 250
@@ -31,12 +31,17 @@ def main():
                             "nsfw" : submission.over_18,
                             "url" : submission.url
                 }
-                break
+                if limit==0:
+                    res = {"memes":json_list}
+                    break
+                else:
+                    json_list.append(json_string)
+                    limit = limit - 1
             else:
                 print("* Fetching new submission...")
                 time.sleep(1)
 
-        return json_string
+        return res
     except Exception as e:
         print("* Something went wrong!")
         print(e)
