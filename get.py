@@ -17,13 +17,13 @@ def loginToReddit():
 
 reddit = loginToReddit()
 
-def main(limit=1):
+def main(limit=1, subs=config.subreddits, upvotes=config.min_upvotes):
     try:
         json_list = []
         while(True):
-            submission = reddit.subreddit(config.subreddits).random()
-            if submission.score > config.min_upvotes: #upvotes > 250
-                json_string = {
+            submission = reddit.subreddit(subs).random()
+            if submission.score > upvotes: #upvotes > 250
+                json_dict = {
                             "title" : submission.title,
                             "subreddit" : str(submission.subreddit),
                             "author" : str(submission.author),
@@ -35,7 +35,7 @@ def main(limit=1):
                     res = {"memes":json_list}
                     break
                 else:
-                    json_list.append(json_string)
+                    json_list.append(json_dict)
                     limit = limit - 1
             else:
                 print("* Fetching new submission...")
