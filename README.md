@@ -24,7 +24,7 @@ to get from different subreddits: ```localhost:5000/{subreddits}/{number of meme
 
 to get from different subreddits with upvotes limit: ```localhost:5000/{subreddits}/{number of upvotes}/{number of memes you want}```
 
-while passing subreddits via URL, you need to make sure that there are no spaces in between the subreddit names. For example, ```memes + dankmemes + me_irl``` doesn't work, it will throw an error. You should use something like this. ```memes+dankmemes+me_irl"```
+while passing multiple subreddits via URL, you need to make sure that there are no spaces in between the subreddit names. For example, ```memes + dankmemes + me_irl``` doesn't work, it will throw an error. You should use something like this. ```memes+dankmemes+me_irl"```
 
 Here's how it looks when ran correctly
 ![img file](https://github.com/jaychandra6/MemeAPI/blob/main/screenshot.png)
