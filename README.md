@@ -29,13 +29,13 @@ while passing multiple subreddits via URL, you need to make sure that there are 
 
 you can also find the live version of this API here
 
-fetch only one meme https://6reposts9.pythonanywhere.com
+fetch only one meme https://memeapi.pythonanywhere.com
 
-fetch more than one meme https://6reposts9.pythonanywhere.com/3
+fetch more than one meme https://memeapi.pythonanywhere.com/3
 
-fetch from different subreddits https://6reposts9.pythonanywhere.com/memes+dankmemes+pewdiepiesubmissions/5
+fetch from different subreddits https://memeapi.pythonanywhere.com/memes+dankmemes+pewdiepiesubmissions/5
 
-fetch from different subreddits with upvote limit https://6reposts9.pythonanywhere.com/memes+dankmemes+pewdiepiesubmissions/500/5
+fetch from different subreddits with upvote limit https://memeapi.pythonanywhere.com/memes+dankmemes+pewdiepiesubmissions/500/5
 
 Here's how it looks when ran correctly
 ![img file](https://github.com/jaychandra6/MemeAPI/blob/main/screenshot.png)
